@@ -1,4 +1,5 @@
 # Panduan Tugas Mandiri — Sistem Member Kedai Kopi
+
 **Mata Kuliah:** Pemrograman Internet | **Prodi:** PSTI UPI
 
 > 🏠 **Tugas ini dikerjakan di rumah** sebagai penguatan materi praktikum.  
@@ -12,6 +13,7 @@ Kamu diminta membuat **Sistem Poin & Keanggotaan Member Kedai Kopi** berbasis Ja
 
 **Tujuan Tugas:**
 Menguji dan memperkuat pemahaman konsep JavaScript dasar yang telah dipraktikkan di laboratorium:
+
 1. Variabel (`let`, `const`) dan perbedaan sifat mutabilitas keduanya
 2. Dialog interaktif (`prompt()`, `alert()`, `console.log()`)
 3. Operasi aritmatika bilangan bulat murni (**tanpa float / desimal**)
@@ -60,6 +62,7 @@ Tugas Mandiri/
 - Cetak judul sistem dan pesan konfirmasi bahwa skrip berhasil terhubung ke tab Console (F12).
 
 **Contoh output Console:**
+
 ```
 === SISTEM POIN MEMBER KEDAI KOPI ===
 Skrip app.js berhasil terhubung!
@@ -91,6 +94,7 @@ Skrip app.js berhasil terhubung!
 - Cetak rincian perolehan poin ke Console browser.
 
 **Contoh output Console:**
+
 ```
 === RINCIAN POIN: Budi Santoso ===
 Poin Kopi        : 45
@@ -107,12 +111,12 @@ Total Poin       : 100
 
 Evaluasi perolehan `totalPoin` untuk menentukan tier keanggotaan:
 
-| Total Poin | Tier Member | Benefit / Diskon |
-|---|---|---|
-| ≥ 100 Poin | Platinum | Diskon 20% + Gratis 1 Minuman Signature |
-| 70 – 99 Poin | Gold | Diskon 10% di setiap transaksi |
-| 40 – 69 Poin | Silver | Diskon 5% untuk menu minuman |
-| &lt; 40 Poin | Bronze | Member Reguler |
+| Total Poin   | Tier Member | Benefit / Diskon                        |
+| ------------ | ----------- | --------------------------------------- |
+| ≥ 100 Poin   | Platinum    | Diskon 20% + Gratis 1 Minuman Signature |
+| 70 – 99 Poin | Gold        | Diskon 10% di setiap transaksi          |
+| 40 – 69 Poin | Silver      | Diskon 5% untuk menu minuman            |
+| &lt; 40 Poin | Bronze      | Member Reguler                          |
 
 - Tampilkan tier member dan benefit ke `console.log()`.
 - Tampilkan ringkasan status member via `alert()`.
@@ -141,6 +145,7 @@ Panggil kedua fungsi tersebut untuk **2 data simulasi pelanggan lain** (Pelangga
 - Cetak jumlah total menu menggunakan properti `.length`.
 
 **Contoh output Console:**
+
 ```
 === MENU REKOMENDASI UNTUK MEMBER ===
 1. Caramel Macchiato
@@ -159,24 +164,28 @@ Total Menu Favorit: 5 menu
 Kerjakan dan simpan progres tugas ini dalam minimal **3 tahap commit**:
 
 ### Commit 1 — Setelah Aktivitas 1, 2, dan 3 selesai:
+
 ```bash
 git add app.js
 git commit -m "feat: integrasi dialog nama dan hitung akumulasi poin member"
 ```
 
 ### Commit 2 — Setelah Aktivitas 4 dan 5 selesai:
+
 ```bash
 git add app.js
 git commit -m "feat: logika tier membership dan modularisasi function"
 ```
 
 ### Commit 3 — Setelah Aktivitas 6 selesai:
+
 ```bash
 git add app.js
 git commit -m "feat: perulangan array menu rekomendasi ke console"
 ```
 
 Lalu push ke repositori GitHub:
+
 ```bash
 git push origin main
 ```
@@ -205,11 +214,11 @@ git push origin main
 
 ## 📊 Rubrik Penilaian (Total: 100 Poin)
 
-| Komponen | Bobot | Indikator Penilaian |
-|---|---|---|
-| **Aktivitas 1 & 2** | 20% | Setup eksternal berhasil, variabel `const`/`let` tepat, `prompt()` dan `if-else` berjalan |
-| **Aktivitas 3** | 20% | Akumulasi poin akurat, menggunakan bilangan bulat murni (tanpa float) |
-| **Aktivitas 4** | 20% | Percabangan bertingkat (Platinum/Gold/Silver/Bronze) tepat dan `alert()` muncul |
-| **Aktivitas 5** | 20% | Dua fungsi modular dengan parameter dan return value, simulasi pelanggan B & C sukses |
-| **Aktivitas 6** | 10% | Array terdefinisi, loop `for` mencetak daftar bernomor rapi |
-| **Git & GitHub Pages** | 10% | Minimal 3 commit bermakna, web live di GitHub Pages |
+| Komponen               | Bobot | Indikator Penilaian                                                                       |
+| ---------------------- | ----- | ----------------------------------------------------------------------------------------- |
+| **Aktivitas 1 & 2**    | 20%   | Setup eksternal berhasil, variabel `const`/`let` tepat, `prompt()` dan `if-else` berjalan |
+| **Aktivitas 3**        | 20%   | Akumulasi poin akurat, menggunakan bilangan bulat murni (tanpa float)                     |
+| **Aktivitas 4**        | 20%   | Percabangan bertingkat (Platinum/Gold/Silver/Bronze) tepat dan `alert()` muncul           |
+| **Aktivitas 5**        | 20%   | Dua fungsi modular dengan parameter dan return value, simulasi pelanggan B & C sukses     |
+| **Aktivitas 6**        | 10%   | Array terdefinisi, loop `for` mencetak daftar bernomor rapi                               |
+| **Git & GitHub Pages** | 10%   | Minimal 3 commit bermakna, web live di GitHub Pages                                       |
